@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/icons_color"
+        app:itemRippleColor="#FCB600"
+        app:itemTextColor="@color/icons_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav" />
+
+
+    <!--    app:abb_indicatorAppearance="round"-->
+    <!--    app:abb_indicatorHeight="4dp"-->
+    <!--    app:abb_indicatorMargin="16dp"-->
+    <!--    app:abb_selectedIndex="0"-->
+    <!--    app:abb_tabColor="#4A093F"-->
+    <!--    app:abb_tabColorSelected="#FCB600"-->
+    <!--    app:abb_indicatorColor="#FCB600"-->
+    <!--    app:abb_selectedTabType="text"-->
+    <!--    app:abb_indicatorLocation="bottom"-->
+    <!--    app:abb_tabs="@menu/bottom_nav"-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

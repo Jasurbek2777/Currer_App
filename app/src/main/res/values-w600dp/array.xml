@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <integer-array name="rightColors" tools:ignore="MissingDefaultResource">
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+    </integer-array>
+
+    <integer-array name="leftColors" tools:ignore="MissingDefaultResource">
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+    </integer-array>
+
+    <integer-array name="rightDrawables" tools:ignore="MissingDefaultResource">
+        <item>@drawable/server</item>
+        <item>@drawable/server</item>
+        <item>@drawable/server</item>
+    </integer-array>
+
+    <integer-array name="leftDrawables" tools:ignore="MissingDefaultResource">
+        <item>@drawable/server</item>
+    </integer-array>
+
+    <string-array name="rightTexts" tools:ignore="ExtraTranslation">
+        <item>"string</item>
+        <item>"string</item>
+        <item>"string</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="uz.juo.currerapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="uz.juo.currerapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="uz.juo.currerapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/innerFragment"
+        android:name="uz.juo.currerapp.ui.fragments.AllOrderFragment"
+        android:label="fragment_inner"
+        tools:layout="@layout/fragment_inner" />
+    <fragment
+        android:id="@+id/innerRvFragment"
+        android:name="uz.juo.currerapp.ui.fragments.InnerRvFragment"
+        android:label="fragment_inner_rv"
+        tools:layout="@layout/fragment_inner_rv" />
+    <fragment
+        android:id="@+id/myOdersFragment"
+        android:name="uz.juo.currerapp.ui.fragments.MyOdersFragment"
+        android:label="fragment_my_oders"
+        tools:layout="@layout/fragment_my_oders" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="uz.juo.currerapp.ui.fragments.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="uz.juo.currerapp.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <fragment
+        android:id="@+id/readyOrdersFragment"
+        android:name="uz.juo.currerapp.ui.fragments.ReadyOrdersFragment"
+        android:label="fragment_ready_orders"
+        tools:layout="@layout/fragment_ready_orders" />
+    <fragment
+        android:id="@+id/languageSettingFragment"
+        android:name="uz.juo.currerapp.ui.fragments.LanguageSettingFragment"
+        android:label="fragment_language_setting"
+        tools:layout="@layout/fragment_language_setting" />
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="uz.juo.currerapp.ui.fragments.OrderHistoryFragment"
+        android:label="fragment_order_history"
+        tools:layout="@layout/fragment_order_history" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="uz.juo.currerapp.ui.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="uz.juo.currerapp.ui.map.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
+    <activity
+        android:id="@+id/curierMapActivity"
+        android:name="uz.juo.currerapp.ui.map.CurierMapActivity"
+        android:label="activity_curier_map"
+        tools:layout="@layout/activity_curier_map" />
+</navigation>

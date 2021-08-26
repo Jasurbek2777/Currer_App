@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group">
+        <item
+            android:id="@+id/all"
+            android:icon="@drawable/ic_curier_home_selected"
+            android:title="Barcha buyurtmalar" />
+        <item
+            android:id="@+id/mine"
+            android:icon="@drawable/ic_image_curier"
+            android:title="Mening buyurtmalarim" />
+        <item
+            android:id="@+id/profil"
+            android:icon="@drawable/server"
+            android:title="" />
+    </group>
+</menu>

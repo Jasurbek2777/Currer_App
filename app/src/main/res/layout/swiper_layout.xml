@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swiper_layout"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="3dp"
+    android:layout_height="wrap_content"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_green_back"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_smile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Buyurtma\nyetkazib berildi"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rv_item_back">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/red_round"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_curier_red_round" />
+
+                    <ImageView
+                        android:id="@+id/more_round"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/ic_curier_mode_round_round" />
+
+                    <ImageView
+                        android:id="@+id/green_round"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_curier_green_round" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/from_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Max Way Xadra"
+                    android:textColor="#2D3A45"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/linear"
+                    app:layout_constraintLeft_toRightOf="@id/linear"
+                    app:layout_constraintTop_toTopOf="@id/linear" />
+
+                <TextView
+                    android:id="@+id/order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Zakaz id:3461"
+                    android:textColor="#8D9BA8"
+                    android:textSize="11sp"
+                    app:layout_constraintLeft_toLeftOf="@id/from_tv"
+                    app:layout_constraintTop_toBottomOf="@id/from_tv" />
+
+                <TextView
+                    android:id="@+id/to_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:text="Shayxontoxur t, Zarqaynar"
+                    android:textColor="#2D3A45"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/linear"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linear" />
+
+                <TextView
+                    android:id="@+id/currier_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Muhammad ali 97 314 2777"
+                    android:textColor="#8D9BA8"
+                    android:textSize="11sp"
+                    app:layout_constraintLeft_toLeftOf="@id/to_tv"
+                    app:layout_constraintTop_toBottomOf="@id/to_tv" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/loacation_card"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="18sp"
+                    android:backgroundTint="#F2F4F5"
+                    app:cardCornerRadius="18sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_location" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/_card"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="18sp"
+                    android:backgroundTint="#FFF8E5"
+                    app:cardCornerRadius="18sp"
+                    app:layout_constraintRight_toLeftOf="@id/loacation_card"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_flash" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/payment_card"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#F7F7F9"
+                    app:cardCornerRadius="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/currier_data">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pay_me" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/order_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="12sp"
+                    android:backgroundTint="#FEF5F6"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="@id/payment_card"
+                    app:layout_constraintLeft_toRightOf="@id/payment_card"
+                    app:layout_constraintRight_toLeftOf="@id/delivery_card"
+                    app:layout_constraintTop_toTopOf="@id/payment_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableLeft="@drawable/ic_curier_order_icon"
+                        android:text="45,500 UZS"
+                        android:textColor="#F23454"
+                        android:textSize="11sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/delivery_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="12sp"
+                    android:backgroundTint="#F4FDF8"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="@id/order_price"
+                    app:layout_constraintLeft_toRightOf="@id/order_price"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/order_price">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableLeft="@drawable/ic_curier_delivery_icon"
+                        android:text="8,800 UZS"
+                        android:textColor="#20D472"
+                        android:textSize="11sp" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
